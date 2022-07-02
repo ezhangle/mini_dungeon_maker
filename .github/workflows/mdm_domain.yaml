@@ -3,14 +3,14 @@ name: mdm_domain
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - .github/workflows/mdm_domain.yaml
       - mdm_domain/**
 
   pull_request:
     branches:
-      - master
+      - main
     paths:
       - .github/workflows/mdm_domain.yaml
       - packages/mdm_domain/**
