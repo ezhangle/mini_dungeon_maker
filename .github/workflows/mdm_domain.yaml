@@ -13,7 +13,7 @@ on:
       - main
     paths:
       - .github/workflows/mdm_domain.yaml
-      - packages/mdm_domain/**
+      - mdm_domain/**
 
 jobs:
   build:
