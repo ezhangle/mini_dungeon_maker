@@ -19,7 +19,7 @@ jobs:
   build:
     defaults:
       run:
-        working-directory: mdm_server
+        working-directory: mdm_server/packages/dungeon_repository
 
     runs-on: ubuntu-latest
 
