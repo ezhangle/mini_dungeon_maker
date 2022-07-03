@@ -1,13 +1,12 @@
 name: dungeon_repository
 description: Repository to access dungeon data
 version: 1.0.0+1
-publish_to: none
 
 environment:
   sdk: ">=2.17.0 <3.0.0"
 
 dependencies:
-  mdm_domain: 1.0.0+1
+  mdm_domain: 1.0.0
 
 dev_dependencies:
   coverage: ^1.1.0
