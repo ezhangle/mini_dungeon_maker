@@ -1,0 +1,5 @@
+name: mini_dungeon_maker
+repository: https://github.com/erickzanardo/mini_dungeon_maker
+packages:
+  - packages/**
+  - .

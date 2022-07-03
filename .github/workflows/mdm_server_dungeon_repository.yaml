@@ -1,4 +1,4 @@
-name: mdm_domain
+name: mdm_server_dungeon_repository
 
 on:
   push:
@@ -6,14 +6,14 @@ on:
       - main
     paths:
       - .github/workflows/mdm_domain.yaml
-      - packages/mdm_domain/**
+      - packages/mdm_server/packages/dungeon_repository/**
 
   pull_request:
     branches:
       - main
     paths:
       - .github/workflows/mdm_domain.yaml
-      - packages/mdm_domain/**
+      - packages/mdm_server/packages/dungeon_repository**
 
 jobs:
   build:
@@ -31,15 +31,16 @@ jobs:
         run: melos bootstrap
 
       - name: Format
-        run: melos exec --scope mdm_domain dart format --set-exit-if-changed lib
+        run: melos exec --scope dungeon_repository dart format --set-exit-if-changed lib
 
       - name: Analyze
-        run: melos exec --scope mdm_domain dart analyze --fatal-infos --fatal-warnings .
+        run: melos exec --scope dungeon_repository dart analyze --fatal-infos --fatal-warnings .
 
       - name: Run Tests
-        run: melos exec --scope mdm_domain flutter test --coverage
+        run: melos exec --scope dungeon_repository flutter test --coverage
 
       - name: Check Code Coverage
         uses: VeryGoodOpenSource/very_good_coverage@v1
         with:
-          path: packages/mdm_domain/coverage/lcov.info
+          path: packages/mdm_server/packages/dungeon_repository/coverage/lcov.info
+

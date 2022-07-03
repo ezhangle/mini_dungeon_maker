@@ -1,7 +1,6 @@
 name: mdm_domain
 description: Models and generic domain function for the Mini Dungeon Maker
-version: 1.0.0+1
-publish_to: none
+version: 1.0.0
 
 environment:
   sdk: ">=2.17.0 <3.0.0"

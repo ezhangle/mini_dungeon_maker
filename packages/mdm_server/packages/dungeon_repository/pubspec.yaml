@@ -1,0 +1,15 @@
+name: dungeon_repository
+description: Repository to access dungeon data
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  mdm_domain: 1.0.0
+
+dev_dependencies:
+  coverage: ^1.1.0
+  mocktail: ^0.3.0
+  test: ^1.19.2
+  very_good_analysis: ^3.0.0
