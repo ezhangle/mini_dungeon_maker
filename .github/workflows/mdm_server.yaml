@@ -39,10 +39,4 @@ jobs:
       - name: Run Tests
         run: |
           flutter pub global activate coverage 1.2.0
-          melos exec --scope mdm_server flutter test --coverage && melos exec --scope mdm_server flutter pub global run coverage:format_coverage --lcov --in=coverage --out=coverage/lcov.info --packages=.packages --report-on=routes
-
-      - name: Check Code Coverage
-        uses: VeryGoodOpenSource/very_good_coverage@v1
-        with:
-          path: packages/mdm_server/coverage/lcov.info
-
+          melos exec --scope mdm_server flutter test --coverage
