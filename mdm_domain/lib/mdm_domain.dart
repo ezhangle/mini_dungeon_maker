@@ -1,3 +1,3 @@
 library mdm_domain;
 
-export 'src/mdm_domain.dart';
+export 'src/models/models.dart';
