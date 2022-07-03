@@ -37,9 +37,7 @@ jobs:
         run: melos exec --scope mdm_server dart analyze --fatal-infos --fatal-warnings .
 
       - name: Run Tests
-        run: |
-          flutter pub global activate coverage 1.2.0
-          melos exec --scope mdm_server flutter test --coverage && melos exec --scope mdm_server flutter pub global run coverage:format_coverage --lcov --in=coverage --out=coverage/lcov.info --packages=.packages --report-on=lib
+        run: melos exec --scope mdm_server flutter test --coverage
 
       - name: Check Code Coverage
         uses: VeryGoodOpenSource/very_good_coverage@v1
