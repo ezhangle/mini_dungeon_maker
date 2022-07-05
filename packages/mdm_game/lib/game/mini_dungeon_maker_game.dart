@@ -1,4 +1,3 @@
 import 'package:flame/game.dart';
 
-class MiniDungeonMakerGame extends FlameGame {
-}
+class MiniDungeonMakerGame extends FlameGame {}
