@@ -1,0 +1,11 @@
+{
+    "@@locale": "en",
+    "appTitle": "Mini Dungeon Maker",
+    "@appTitle": {
+        "description": "App Title around the app"
+    },
+    "play": "Play",
+    "@play": {
+        "description": "Play label"
+    }
+}
