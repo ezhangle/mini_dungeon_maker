@@ -31,10 +31,10 @@ jobs:
         run: melos bootstrap
 
       - name: Format
-        run: melos exec --scope mdm_game dart format --set-exit-if-changed lib
+        run: melos exec --scope mdm_game flutter format --set-exit-if-changed lib
 
       - name: Analyze
-        run: melos exec --scope mdm_game dart analyze --fatal-infos --fatal-warnings .
+        run: melos exec --scope mdm_game flutter analyze --fatal-infos --fatal-warnings .
 
       - name: Run Tests
         run: melos exec --scope mdm_game flutter test --coverage
